@@ -9,3 +9,4 @@ if __name__ == '__main__':
     mark = student_marks[query_name]
     avg = sum(mark) / len(mark)
     print('{:0.2f}'.format(avg))
+
