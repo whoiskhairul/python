@@ -2,7 +2,6 @@ def minion_game(string):
     vowel = 0
     consonant = 0
     for i in range(len(string)):
-
         if(string[i] in 'AEIOU'):
             vowel = vowel + len(string) - i
         else:
