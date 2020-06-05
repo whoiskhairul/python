@@ -1,9 +1,16 @@
-import textwrap
+def print_formatted(number):
+    w = bin(number).replace('0b','')
+    w = len(w)
+    for i in range(1,number+1) :
+        b = bin(i).replace('0b','').rjust(w, ' ')
+        o = oct(i).replace('0o', '').rjust(w, ' ')
+        h = hex(i).replace('0x','').rjust(w, ' ').upper()
+        d = str(i).rjust(w, ' ')
 
-def wrap(string, max_width):
-    return textwrap.shorten(string,width=max_width)
+        print(d,o,h,b)
+
+
 
 if __name__ == '__main__':
-    string, max_width = input(), int(input())
-    result = wrap(string, max_width)
-    print(result)
+    n = int(input())
+    print_formatted(n)
