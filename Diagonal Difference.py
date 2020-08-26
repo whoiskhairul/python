@@ -4,8 +4,8 @@ def diagonalDifference(arr):
     r_to_l = 0
     for i in range(l):
         l_to_r += arr[i][i]
-        r_to_l += arr[i][l-i-1]
-    return abs(l_to_r-r_to_l)
+        r_to_l += arr[i][l - i - 1]
+    return abs(l_to_r - r_to_l)
 
 
 if __name__ == '__main__':

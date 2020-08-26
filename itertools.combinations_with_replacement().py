@@ -6,9 +6,8 @@ s = list(s)
 s.sort()
 
 arr = []
-x = list(combinations_with_replacement(s,k))
+x = list(combinations_with_replacement(s, k))
 for j in range(len(x)):
-
     arr.append(''.join(x[j]))
 arr.sort()
 for i in arr:

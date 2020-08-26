@@ -7,15 +7,14 @@ for i in range(t):
     n = int(n)
     k = int(k)
 
-    #x = int(input().split())
+    # x = int(input().split())
     a = input().split()
     for j in range(n):
         a[j] = int(a[j])
-        if(a[j]<1):
-            count+=1
+        if (a[j] < 1):
+            count += 1
 
-    if(count<k):
+    if (count < k):
         print("YES")
     else:
         print('NO')
-

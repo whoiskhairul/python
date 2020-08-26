@@ -1,9 +1,9 @@
-
 def aVeryBigSum(ar):
     count = 0
     for i in ar:
-        count+=i
+        count += i
     return count
+
 
 if __name__ == '__main__':
     ar_count = int(input())

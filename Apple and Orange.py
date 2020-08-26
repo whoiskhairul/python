@@ -1,13 +1,14 @@
 def countApplesAndOranges(s, t, a, b, apples, oranges):
-    a_count, o_count =0, 0
+    a_count, o_count = 0, 0
     for apple in apples:
-        if apple+a>=s and apple+a<=t:
-            a_count+=1
+        if apple + a >= s and apple + a <= t:
+            a_count += 1
     for orange in oranges:
-        if b+orange<=t and b+orange>=s:
-            o_count+=1
+        if b + orange <= t and b + orange >= s:
+            o_count += 1
     print(a_count)
     print(o_count)
+
 
 if __name__ == '__main__':
     st = input().split()

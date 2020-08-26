@@ -1,4 +1,4 @@
-#def bus_stopage_list():
+# def bus_stopage_list():
 dict = {
     0: 'Abdullahpur', 1: 'Adabor', 2: 'Adamjee College', 3: 'Agargaon', 4: 'Airport', 5: 'Aminbazar',
     6: 'Ansar Camp', 7: 'Arambagh', 8: 'Asad Gate', 9: 'Ashulia Bazar', 10: 'Azampur', 11: 'Azimpur',
@@ -28,15 +28,15 @@ dict = {
     145: 'Station Road', 146: 'TT Para', 147: 'Taltola', 148: 'Technical', 149: 'Tongi', 150: 'Uttar Badda',
     151: 'Wireless Mor', 152: 'Workshop', 153: 'Zirabo',
 }
-    #return dict
+# return dict
 new = {}
 i = 0
-while i<153:
-    if i>88:
-        new[i] = dict[i+1]
-        i+=1
+while i < 153:
+    if i > 88:
+        new[i] = dict[i + 1]
+        i += 1
     else:
         new[i] = dict[i]
-        i+=1
+        i += 1
 print(dict)
 print(new)

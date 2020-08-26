@@ -1,5 +1,6 @@
 from collections import Counter
-n , m = input().split()
+
+n, m = input().split()
 
 arr = list(map(int, input().split()))
 a = set(map(int, input().split()))
@@ -11,4 +12,4 @@ c = sum(counter[v] for v in a)
 counter = Counter(arr)
 d = sum(counter[v] for v in b)
 
-print(c-d)
+print(c - d)

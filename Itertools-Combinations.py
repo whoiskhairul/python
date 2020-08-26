@@ -1,5 +1,5 @@
-from itertools import combinations
 from collections import Counter
+from itertools import combinations
 
 s, k = input().split()
 k = int(k)

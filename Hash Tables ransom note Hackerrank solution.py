@@ -1,9 +1,13 @@
 from collections import Counter
+
+
 def checkMagazine(magazine, note):
     mag = Counter(magazine)
     n = Counter(note)
-    if(n-mag == {}):print('Yes')
-    else:print('No')
+    if (n - mag == {}):
+        print('Yes')
+    else:
+        print('No')
 
 
 if __name__ == '__main__':

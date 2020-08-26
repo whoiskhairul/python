@@ -3,7 +3,7 @@ s = set(map(int, input().split()))
 n = int(input())
 for i in range(n):
     q = input()
-    if('pop' in q):
+    if ('pop' in q):
         if set:
             s.pop()
     elif 'remove' in q:

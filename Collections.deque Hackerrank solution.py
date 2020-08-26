@@ -1,10 +1,11 @@
 from collections import deque
+
 d = deque()
 
 for _ in range(int(input())):
     q = input()
-    if  any(i.isdigit() for i in q):
-        p,n = q.split()
+    if any(i.isdigit() for i in q):
+        p, n = q.split()
         if p == 'append':
             d.append(n)
         elif p == 'appendleft':
@@ -14,4 +15,4 @@ for _ in range(int(input())):
     elif q == 'popleft':
         d.popleft()
 for i in range(len(d)):
-    print(d[i],end=' ')
+    print(d[i], end=' ')

@@ -1,8 +1,8 @@
 n = input()
-a = set(map(int,input().split()))
+a = set(map(int, input().split()))
 
 for i in range(int(input())):
-    q,_ = input().split()
+    q, _ = input().split()
     b = set(map(int, input().split()))
     if 'symmetric_difference_update' in q:
         a.symmetric_difference_update(b)
